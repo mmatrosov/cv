@@ -11,17 +11,18 @@
 \renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
 
 % moderncv themes
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 % personal data
-\name{Михаил}{Матросов}
+\name{\fontsize{1cm}{10em}\selectfont Михаил \vspace{0.5ex}}{Матросов}
 \title{C++ разработчик}                               % optional, remove / comment the line if not wanted
 \address{Россия, Москва} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+7~(926)~381~61~64}
 \email{mikhail.matrosov@gmail.com}                               % optional, remove / comment the line if not wanted
-\social[linkedin]{mikhail-matrosov}                        % optional, remove / comment the line if not wanted
+\social[linkedin]{mmatrosov}                        % optional, remove / comment the line if not wanted
 \social[github]{mmatrosov}                              % optional, remove / comment the line if not wanted
+\extrainfo{\includegraphics[height=1em]{stackexchange.png} \httplink[Mikhail]{stackoverflow.com/users/261217/mikhail}}
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{First things first}                                 % optional, remove / comment the line if not wanted
 
@@ -34,47 +35,88 @@
 
 Большой опыт исследовательской работы в области обработки изображений, тональной компрессии и теории цвета. Тем не менее, больше заинтересован в развитии технических навыков, чем в продолжении научной работы.
 
-Могу похвастаться аккаунтом на StackOverflow, расширением NativeViewer для Visual Studio.
+Богатое прошлое в олимпиадном программировании. Поступил в МГУ без экзаменов по результатам Всероссийской Олимпиады по Информатике. Хорошее знание широкого класса алгоритмов и структур данных.
+
+Могу похвастаться аккаунтом на \httplink[StackOverflow]{stackoverflow.com/users/261217/mikhail}, расширением \httplink[NativeViewer]{sourceforge.net/projects/nativeviewer/} для Visual Studio.
 
 \section{Навыки}
 
 \subsection{Языки программирования}
 
-C++, Matlab, C\#, JavaScript, HTML, win-batch, SQL
+\cvitem{основные}{
+	C++, Matlab
+}
+\cvitem{ещё знаю}{
+	C\#, JavaScript, HTML, SQL
+}
 
 \subsection{Библиотеки и технологии}
 
-boost, Intel IPP, Intel MKL, CGAL, OpenCV, ASP.NET, 
+\cvitem{основные}{
+	OpenCV, Intel IPP, STL, Microsoft ConcRT
+}
+\cvitem{ещё умею}{
+	boost, Intel MKL, MFC, CGAL, ASP.NET, jQuery
+}
 
-\subsection{Средства и технологии для разработки}
+\subsection{Прикладные программы и системы}
 
-Visual Studio, SVN, GIT, LaTeX, 
-
+\cvitem{основные}{
+	Visual Studio, SVN, GIT, win-batch, Total Commander
+}
+\cvitem{ещё могу}{
+	\LaTeX, Photoshop
+}
 
 
 \section{Научные и фундаментальные знания}
 
-Обработка изображений~\cite{matrosov2009interactive,matrosov2009diploma}, теория цвета~\cite{matrosov2013correction}, компьютерное зрение, машинная графика.
+\cvitem{}{
+	Обработка изображений~\cite{matrosov2009diploma}, теория цвета~\cite{matrosov2013correction}, компьютерное зрение, машинная графика.
+}
+\cvitem{}{
+	Алгоритмы и структуры данных, вычислительная геометрия, линейная алгебра.
+}
 
-Линейная алгебра.
 
 \section{Опыт работы}
 
-\cvitem{2009--2010}{
-	Преподавал прак.
+\cvitem{c 2009}{
+	\textbf{OctoNus Software Ltd.} \newline{} 
+	Разработка алгоритмов и ПО. Основной опыт работы. Анализ задач клиентов, связанных с качеством изображений бриллиантов, разработка методик и алгоритмов для их решения. Реализация и оптимизация алгоритмов.
+}
+\cvitem{c 2009}{
+	\textbf{Лаборатория компьютерной графики и мультимедиа ВМК МГУ} \newline{} 
+	Исследовательская работа в качестве аспиранта. Тесно связана с работой в OctoNus.
+}
+\cvitem{2011}{
+	\textbf{Кафедра АСВК факультета ВМК МГУ} \newline{} 
+	Преподаватель практикума по С++ для студентов 3 курса.
+}
+\cvitem{2004--2006}{
+	\textbf{Летняя Компьютерная Школа} \newline{} 
+	Преподаватель группы С, вожатый. 
 }
 
 \section{Образование}
-\cventry{2004--2009}{Специалист}{Московский Государственный Университет}{}{}{Факультет Вычислительной Математики и Кибернетики}
 \cvitem{2004--2009}{
 	\textbf{Московский Государственный Университет} \newline{} 
-	Специалист, факультет Вычислительной Математики и Кибернетики
+	Факультет Вычислительной Математики и Кибернетики \newline{} 
+	Специалист.
+}
+\cvitem{2002--2003}{
+	\textbf{Летняя Компьютерная Школа} \newline{} 
+	Ученик групп С и А. Изучение базовых знаний по алгоритмам и структур данных.
 }
 
 \section{Владение языками}
 
 \cvitem{Английский}{Продвинутый. Свободное чтение и письмо на произвольные темы. Свободный диалог на технические темы.}
 \cvitem{Русский}{Носитель.}
+
+
+\section{Свои проекты}
+
 
 \section{Интересы}
 
