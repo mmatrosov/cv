@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper,final]{moderncv}
+
+\usepackage[T2A]{fontenc}
+% исходный текст в кодировки unicode
+\usepackage[utf8]{inputenc}
+% включаем поддержку русского языка
+\usepackage[russian]{babel}
+
+\renewcommand{\rmdefault}{cmr} % Шрифт с засечками
+\renewcommand{\sfdefault}{cmss} % Шрифт без засечек
+\renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\newcommand{\StackExchange}{\includegraphics[height=1em]{stackexchange.png}}
+
+% personal data
+\name{Mikhail \vspace{0.5ex} \\}{Matrosov}
+\title{C++ developer}                               % optional, remove / comment the line if not wanted
+\address{Russia, Moscow} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+7~(926)~381-61-64}
+\email{mikhail.matrosov@gmail.com}                               % optional, remove / comment the line if not wanted
+\social[linkedin]{mmatrosov}                        % optional, remove / comment the line if not wanted
+\social[github]{mmatrosov}                              % optional, remove / comment the line if not wanted
+\extrainfo{\StackExchange \httplink[Mikhail]{stackoverflow.com/users/261217/mikhail}}
+
+\begin{document}
+\maketitle
+
+Interested in C++ applications development and optimization, and in software architecture. Looking for job in an established team of professionals. Image processing area and Windows OS are welcomed.
+
+\section{Skills}
+
+\subsection{Programming languages}
+
+\cvitem{primary}{
+	\textbf{C++}: 7 years, image processing applications, multi-threaded applications, console utilities, GUI with MFC, handling devices with corresponding SDK and via COM-port. \newline
+	\textbf{Matlab}: 5 years, applications prototyping, mex-interfaces.
+}
+\cvitem{secondary}{
+	\textbf{C\#}, \textbf{JavaScript}, \textbf{HTML}, \textbf{SQL}, \textbf{PHP}: small utilities, simple web-applications.
+}
+
+\subsection{Libraries and technologies}
+
+\cvitem{primary}{
+	\textbf{OpenCV}, \textbf{Intel IPP}, \textbf{STL}, \textbf{Microsoft ConcRT}: multiple image processing projects, problems in areas of combinatorial theory, numerical analysis and graph theory.
+}
+\cvitem{secondary}{
+	\textbf{boost}, \textbf{Intel MKL}, \textbf{CGAL}, \textbf{ASP.NET}, \textbf{jQuery}: shallow knowledge, used only in several projects.
+}
+
+\subsection{Applications and systems}
+
+\cvitem{primary}{
+	\textbf{Windows}, \textbf{Visual Studio}, \textbf{SVN}, \textbf{GIT}, \textbf{win-batch}
+}
+\cvitem{secondary}{
+	\textbf{Unix}, \textbf{\LaTeX}, \textbf{Photoshop}, \textbf{bash}
+}
+
+\subsection{Scientific and fundamental knowledge}
+
+\cvitem{}{
+	Image processing~\cite{matrosov2009diploma}, color theory~\cite{matrosov2013correction}, computer vision, computer graphics, algorithms, data structures.
+}
+
+
+\section{Experience}
+
+\cvitem{since 2008}{
+	\textbf{OctoNus Software Ltd}, \emph{Developer} \newline 
+	Analysis of problems in a jewelry images acquisition software. Image processing algorithms development and integration. Effectively implemented in C++ using Intel IPP and Microsoft ConcRT a number of algorithms of tone mapping, extended depth of field, color correction, image-based 3D-reconstruction and 3D-models stitching. For all the algorithms collected relevant data from partners, analyzed state of the art methods, prototyped solutions in Matlab. Implemented algorithms work in real time and are used in jewelry industry for quality control tasks.
+}
+\cvitem{since 2009}{
+	\textbf{Graphics and Media Lab, CMC MSU}, \emph{Researcher} \newline{} 
+	Member as a PhD student, research activity in OctoNus projects (see above).
+}
+\cvitem{2011}{
+	\textbf{CMC MSU}, \emph{Lecturer} \newline{} 
+	C++ laboratory course for students.
+}
+\cvitem{2004--2006}{
+	\textbf{Summer Informatics School}, \emph{Lecturer, Counselor} \newline{} 
+	Theoretical and practical courses for group C.
+}
+
+
+\section{Personal projects and contributions}
+
+\cvitem{since 2012}{
+	\httplink[\textbf{NativeViewer}]{sourceforge.net/projects/nativeviewer/}, \emph{Author} \newline{} 
+	A Visual Studio extension for visualization of OpenCV images during debug of native C++ applications. Opposed to Microsoft Image Watch, works with all version of Visual Studio.
+}
+\cvitem{since 2010}{
+	\httplink[\textbf{StackOverflow}]{stackoverflow.com/users/261217/mikhail}, \emph{Contributor} \newline{} 
+	Over 3000 reputation, over 30 accepted answers. \newline
+	Top 10\% for tags \texttt{algorithm} and \texttt{image-processing}. \newline
+	Top 20\% for tags \texttt{c++}, \texttt{matlab} and \texttt{opencv}.
+}
+\cvitem{2012}{
+	\httplink[\textbf{OpenCV}]{code.opencv.org/users/915}, \emph{Contributor} \newline{} 
+	\httplink[Patch \#1641]{code.opencv.org/issues/1641}. Discrete Voronoi diagram: returning closest pixel instead of connected component in distanceTransform.
+}
+
+\section{Education}
+
+\cvitem{2009--2012}{
+	\textbf{Moscow State University} \newline 
+	Computational Mathematics and Cybernetics department \newline
+	\emph{PhD student}.
+}
+
+\cvitem{2004--2009}{
+	\textbf{Moscow State University} \newline 
+	Computational Mathematics and Cybernetics department \newline
+	\emph{Student, specialist}. \newline
+	Graduation work~\cite{matrosov2009diploma}. Won admission without matriculation because of I degree diploma in \httplink[XVI Russian Olympiad in Informatics]{neerc.ifmo.ru/school/archive/2003-2004/ru-olymp-roi-2004-standings.html}.
+}
+\cvitem{2001--2003}{
+	\textbf{Summer Informatics School} \newline
+	\emph{Student of groups С and А}. \newline
+	Studying a variety of algorithms and data structures.
+}
+
+\section{Languages}
+
+\cvitem{English}{Advanced. Easy reading and writing about an arbitrary topic. Easy conversation about a technical topic.}
+\cvitem{Russian}{Native speaker.}
+
+
+\renewcommand{\bibliographyitemlabel}{[\arabic{enumiv}]}
+\renewcommand{\refname}{Publications}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+
+\end{document}
