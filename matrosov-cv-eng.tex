@@ -1,20 +1,4 @@
-\documentclass[11pt,a4paper,final]{moderncv}
-
-\usepackage[T2A]{fontenc}
-% исходный текст в кодировки unicode
-\usepackage[utf8]{inputenc}
-% включаем поддержку русского языка
-\usepackage[russian]{babel}
-
-\renewcommand{\rmdefault}{cmr} % Шрифт с засечками
-\renewcommand{\sfdefault}{cmss} % Шрифт без засечек
-\renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
-
-% moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
-\newcommand{\StackExchange}{\includegraphics[height=1em]{stackexchange.png}}
+\include{header}
 
 % personal data
 \name{Mikhail \vspace{0.5ex} \\}{Matrosov}
@@ -24,7 +8,7 @@
 \email{mikhail.matrosov@gmail.com}                               % optional, remove / comment the line if not wanted
 \social[linkedin]{mmatrosov}                        % optional, remove / comment the line if not wanted
 \social[github]{mmatrosov}                              % optional, remove / comment the line if not wanted
-\extrainfo{\StackExchange \httplink[Mikhail]{stackoverflow.com/users/261217/mikhail}}
+\extrainfo{\StackExchange\httplink[Mikhail]{stackoverflow.com/users/261217/mikhail}}
 
 \begin{document}
 \maketitle
@@ -95,19 +79,19 @@ Interested in C++ applications development and optimization, and in software arc
 \section{Personal projects and contributions}
 
 \cvitem{2014}{
-	\httplink[\textbf{C++ User Group, Russia}]{meetingcpp.ru}, \emph{Speaker} \newline{} 
-	Talk \httplink[<<С++ без new и delete>>]{meetingcpp.ru/?p=250}.
+	\myhttplink[\textbf{C++ User Group, Russia}]{meetingcpp.ru}, \emph{Speaker} \newline{} 
+	Talk \myhttplink[<<С++ без new и delete>>]{meetingcpp.ru/?p=250}.
 }
 \cvitem{2012}{
-	\httplink[\textbf{OpenCV}]{code.opencv.org/users/915}, \emph{Contributor} \newline{} 
-	\httplink[Patch \#1641]{code.opencv.org/issues/1641}. Discrete Voronoi diagram: returning closest pixel instead of connected component in distanceTransform.
+	\myhttplink[\textbf{OpenCV}]{code.opencv.org/users/915}, \emph{Contributor} \newline{} 
+	\myhttplink[Patch \#1641]{code.opencv.org/issues/1641}. Discrete Voronoi diagram: returning closest pixel instead of connected component in distanceTransform.
 }
 \cvitem{2012}{
-	\httplink[\textbf{NativeViewer}]{sourceforge.net/projects/nativeviewer/}, \emph{Author} \newline{} 
+	\myhttplink[\textbf{NativeViewer}]{sourceforge.net/projects/nativeviewer/}, \emph{Author} \newline{} 
 	A Visual Studio extension for visualization of OpenCV images during debug of native C++ applications. Opposed to Microsoft Image Watch, works with Visual Studio versions starting from 2003.
 }
 \cvitem{since 2010}{
-	\httplink[\textbf{StackOverflow}]{stackoverflow.com/users/261217/mikhail}, \emph{Contributor} \newline{} 
+	\myhttplink[\textbf{StackOverflow}]{stackoverflow.com/users/261217/mikhail}, \emph{Contributor} \newline{} 
 	Over 6000 reputation, over 50 accepted answers. \newline
 	Top 10\% for tags \texttt{c++}, \texttt{algorithm} and \texttt{image-processing}. \newline
 	Top 20\% for tags \texttt{matlab} and \texttt{opencv}.
@@ -116,7 +100,7 @@ Interested in C++ applications development and optimization, and in software arc
 \section{Trainings and certificates}
 
 \cvitem{2014}{
-	\httplink[\textbf{An Overview of the New C++ (C++11/14)}]{www.aristeia.com/C++11.html} \newline{} 
+	\myhttplink[\textbf{An Overview of the New C++ (C++11/14)}]{www.aristeia.com/C++11.html} \newline{} 
 	Intensive technical training by Scott Meyers.
 }
 
@@ -132,7 +116,7 @@ Interested in C++ applications development and optimization, and in software arc
 	\textbf{Moscow State University} \newline 
 	Computational Mathematics and Cybernetics department \newline
 	\emph{Student, specialist}. \newline
-	Graduation work~\cite{matrosov2009diploma}. Won admission without matriculation because of I degree diploma in \httplink[XVI Russian Olympiad in Informatics]{neerc.ifmo.ru/school/archive/2003-2004/ru-olymp-roi-2004-standings.html}.
+	Graduation work~\cite{matrosov2009diploma}. Won admission without matriculation because of I degree diploma in \myhttplink[XVI Russian Olympiad in Informatics]{neerc.ifmo.ru/school/archive/2003-2004/ru-olymp-roi-2004-standings.html}.
 }
 \cvitem{2001--2003}{
 	\textbf{Summer Informatics School} \newline

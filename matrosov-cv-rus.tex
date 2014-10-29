@@ -1,20 +1,4 @@
-\documentclass[11pt,a4paper,final]{moderncv}
-
-\usepackage[T2A]{fontenc}
-% исходный текст в кодировки unicode
-\usepackage[utf8]{inputenc}
-% включаем поддержку русского языка
-\usepackage[russian]{babel}
-
-\renewcommand{\rmdefault}{cmr} % Шрифт с засечками
-\renewcommand{\sfdefault}{cmss} % Шрифт без засечек
-\renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
-
-% moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
-\newcommand{\StackExchange}{\includegraphics[height=1em]{stackexchange.png}}
+\include{header}
 
 % personal data
 \name{Михаил \vspace{0.5ex} \\}{Матросов}
@@ -24,11 +8,11 @@
 \email{mikhail.matrosov@gmail.com}                               % optional, remove / comment the line if not wanted
 \social[linkedin]{mmatrosov}                        % optional, remove / comment the line if not wanted
 \social[github]{mmatrosov}                              % optional, remove / comment the line if not wanted
-\extrainfo{\StackExchange \httplink[Mikhail]{stackoverflow.com/users/261217/mikhail}}
+\extrainfo{\StackExchange\httplink[Mikhail]{stackoverflow.com/users/261217/mikhail}}
 
 \begin{document}
 \maketitle
-
+	
 Интересует разработка и оптимизация программ на С++, а также проектирование систем. Ищу работу в сложившемся коллективе профессионалов. Желательна область обработки изображений и ОС Windows.
 
 \section{Навыки}
@@ -97,19 +81,19 @@
 \section{Свои проекты и вклады}
 
 \cvitem{2014}{
-	\httplink[\textbf{C++ User Group, Russia}]{meetingcpp.ru}, \emph{Докладчик} \newline{} 
-	Доклад \httplink[<<С++ без new и delete>>]{meetingcpp.ru/?p=250}.
+	\myhttplink[\textbf{C++ User Group, Russia}]{meetingcpp.ru}, \emph{Докладчик} \newline{} 
+	Доклад \myhttplink[<<С++ без new и delete>>]{meetingcpp.ru/?p=250}.
 }
 \cvitem{2012}{
-	\httplink[\textbf{OpenCV}]{code.opencv.org/users/915}, \emph{Участник} \newline{} 
-	\httplink[Патч \#1641]{code.opencv.org/issues/1641}. Discrete Voronoi diagram: returning closest pixel instead of connected component in distanceTransform.
+	\myhttplink[\textbf{OpenCV}]{code.opencv.org/users/915}, \emph{Участник} \newline{} 
+	\myhttplink[Патч \#1641]{code.opencv.org/issues/1641}. Discrete Voronoi diagram: returning closest pixel instead of connected component in distanceTransform.
 }
 \cvitem{2012}{
-	\httplink[\textbf{NativeViewer}]{sourceforge.net/projects/nativeviewer/}, \emph{Автор} \newline{} 
+	\myhttplink[\textbf{NativeViewer}]{sourceforge.net/projects/nativeviewer/}, \emph{Автор} \newline{} 
 	Расширение Visual Studio для просмотра изображений OpenCV прямо во время отладки С++ кода. В отличие от Microsoft Image Watch, работает для версий Visual Studio начиная с 2003.
 }
 \cvitem{с 2010}{
-	\httplink[\textbf{StackOverflow}]{stackoverflow.com/users/261217/mikhail}, \emph{Участник} \newline{} 
+	\myhttplink[\textbf{StackOverflow}]{stackoverflow.com/users/261217/mikhail}, \emph{Участник} \newline{} 
 	Более 6000 репутации, более 50 принятых ответов. \newline
 	Топ 10\% по тэгам \texttt{c++}, \texttt{algorithm} и \texttt{image-processing}. \newline
 	Топ 20\% по тэгам \texttt{matlab} и \texttt{opencv}.
@@ -118,7 +102,7 @@
 \section{Тренинги и сертификаты}
 
 \cvitem{2014}{
-	\httplink[\textbf{An Overview of the New C++ (C++11/14)}]{www.aristeia.com/C++11.html} \newline{} 
+	\myhttplink[\textbf{An Overview of the New C++ (C++11/14)}]{www.aristeia.com/C++11.html} \newline{} 
 	Технический тренинг от Скотта Мейерса.
 }
 
@@ -134,7 +118,7 @@
 	\textbf{Московский Государственный Университет} \newline 
 	Факультет Вычислительной Математики и Кибернетики \newline
 	\emph{Студент, специалист}. \newline
-	Диплом~\cite{matrosov2009diploma}. Поступил без экзаменов благодаря диплому I степени на \httplink[XVI Всероссийской Олимпиаде по Информатике]{neerc.ifmo.ru/school/archive/2003-2004/ru-olymp-roi-2004-standings.html}.
+	Диплом~\cite{matrosov2009diploma}. Поступил без экзаменов благодаря диплому I степени на \myhttplink[XVI Всероссийской Олимпиаде по Информатике]{neerc.ifmo.ru/school/archive/2003-2004/ru-olymp-roi-2004-standings.html}.
 }
 \cvitem{2001--2003}{
 	\textbf{Летняя Компьютерная Школа} \newline

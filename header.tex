@@ -1,0 +1,21 @@
+% Common header for both English and Russian versions
+
+\documentclass[11pt,a4paper,final]{moderncv}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{dashundergaps}
+
+\renewcommand{\rmdefault}{cmr}  % Шрифт с засечками
+\renewcommand{\sfdefault}{cmss} % Шрифт без засечек
+\renewcommand{\ttdefault}{cmtt} % Моноширинный шрифт
+
+% moderncv themes
+\moderncvstyle{classic}  % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}  % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\newcommand{\StackExchange}{\includegraphics[height=1em]{stackexchange.png}}
+
+% My custom httplink command with underlined text
+\newcommand*{\myhttplink}[2][]{\href{http://#2}{\dotuline{#1}}}
