@@ -11,7 +11,7 @@
 \begin{document}
 \maketitle
 
-C++ jedi. Create software and know what teamwork is. Solve problems and optimize everything. Good at communicating with people and love to teach people. About me, in three words: C++, Git, Visual Studio.
+C++ jedi. Create software and know what teamwork is. Solve problems and optimize everything. Good at communicating with people and love to teach people. Can bring order to your messy code base.
 \par\medskip
 * Letter ``k'' is not pronounced in my name, it is \textipa{[{m\super j}Ix5{\textprimstress}il]}, like \myhttplink[Gorbachev]{http://en.wikipedia.org/wiki/Mikhail_Gorbachev}.
 
@@ -20,46 +20,47 @@ C++ jedi. Create software and know what teamwork is. Solve problems and optimize
 \subsection{Programming languages}
 
 \cvitem{primary}{
-	\textbf{C++}: from 2005, image processing applications, multi-threaded applications, console utilities, GUI with Qt and MFC, 3D-graphics, CAD systems; making internal and public technical talks and seminars. \newline
-	\textbf{Matlab}: from 2007 till 2014, algorithms and GUI prototyping, mex-interfaces.
+	\textbf{C++}: high-performance low-latency multi-threaded applications, 3D-graphics, image processing applications, GUI with Qt and MFC; internal and public technical talks and seminars. \newline
+	\textbf{Python}: all sorts of scripts ranging from text parsing and json manipulation to automatic AWS EC2 instances set up and TCP congestion window control
 }
 \cvitem{secondary}{
-	\textbf{Python}, \textbf{C\#}, \textbf{JavaScript}, \textbf{SQL}: small utilities, home projects, simple web-applications.
+	\textbf{Matlab}, \textbf{C\#}, \textbf{JavaScript}, \textbf{SQL}
 }
 
 \subsection{Libraries and technologies}
 
 \cvitem{primary}{
-	\textbf{STL}, \textbf{boost}, \textbf{OpenCV}, \textbf{Qt}, \textbf{Intel IPP}: multiple image processing projects, problems in areas of combinatorial theory, numerical analysis, graph theory, 2D and 3D geometry.
+	\textbf{STL}, \textbf{boost}, \textbf{boost.asio}, \textbf{OpenCV}, \textbf{Intel IPP}
 }
 \cvitem{secondary}{
-	\textbf{Microsoft ConcRT}, \textbf{Intel MKL}, \textbf{OpenSceneGraph}, \textbf{CGAL}, \textbf{ASP.NET}, \textbf{jQuery}: shallow knowledge, used only in several projects.
+	\textbf{clang-tidy}, \textbf{Microsoft ConcRT}, \textbf{Intel MKL}, \textbf{OpenSceneGraph}, \textbf{CGAL}, \textbf{ASP.NET}, \textbf{Qt}, \textbf{MFC}, \textbf{jQuery}
 }
 
 \subsection{Applications and systems}
 
-\cvitem{primary}{
-	\textbf{Windows}, \textbf{Visual Studio}, \textbf{SmartGit}, \textbf{Git}, \textbf{SVN}, \textbf{Total Commander}, \textbf{Conan}
-}
-\cvitem{secondary}{
-	\textbf{Unix}, \textbf{\LaTeX}, \textbf{Photoshop}, \textbf{bash}
+\cvitem{}{
+	\textbf{Ubuntu}, \textbf{VS Code}, \textbf{conan}, \textbf{AWS}, \textbf{Git}, \textbf{Jenkins}, \textbf{Windows}, \textbf{Visual Studio}, \textbf{Bamboo}, \textbf{SVN}
 }
 
 \subsection{Scientific and fundamental knowledge}
 
 \cvitem{}{
-	Image processing~\cite{matrosov2009diploma}, color theory~\cite{matrosov2013correction}, computer vision, computer graphics, algorithms, data structures.
+	Image processing~\cite{matrosov2009diploma}, color theory~\cite{matrosov2013correction}, computer vision, computer graphics, algorithms, data structures, software design.
 }
 
 \subsection{Productivity}
 
 \cvitem{}{
-	Touch typing in both English and Russian layouts. To optimize movements of the right hand during typing, created a special utility called KeysRemapper (see ``\hyperref[sec:contributions]{Contributions}'' section).
+	Touch typing in both English and Russian layouts.
 }
 
 
 \section{Experience}
 
+\cvitem{from~2020\cvmonth{12}}{
+	\textbf{Pinely (former Aim High Tech)}, \emph{Senior developer}. \newline 
+	Develop high-performance low-latency multi-threaded trading platform for high frequency trading on crypto exchanges. Create a system searching for the the best route between hosts and seamlessly switching websocket connections to the best one. Implement a component for redistributing REST requests among several network intefaces and exchange accounts to respect rate limits. Set up and maintain AWS EC2 instances. Bring some order into development chaos: create a sanity check testing system and introduce a number of unit tests for critical components, create design diagrams for the most complicated parts of the system, refactor a lot of code manually and with help of clang-tidy, introduce metrics for TCP retransmissions and congestion window size.
+}
 \cvitem{from~2019 till~2020}{
 	\textbf{Higher School of Economics}, \emph{Lecturer}\newline 
 	Practical lessons on C++ within the ``Introduction to Programming'' course of the ``Applied Mathematics and Information Science'' bachelor’s programme on the Faculty of Computer Science. \newline 
@@ -117,10 +118,13 @@ C++ jedi. Create software and know what teamwork is. Solve problems and optimize
 
 Talks marked with $\star$ symbol deserve to be highlighted. Talks with captions in English were given in English.
 
+\cvitem{2021\cvmonth{11}}{
+	\myhttplink[\textbf{C++ Russia 2021}]{https://2021.cppconf.ru/en/} \newline 
+	\myhttplink[``Разговор в студии о С++ в HFT	'']{https://2021.cppconf.ru/en/talks/conversation-in-the-studio-about-c-in-hft/}
+}
 \cvitem{$\star$ 2020\cvmonth{07}}{
 	\myhttplink[\textbf{C++ Russia 2020}]{https://cppconf-moscow.ru/} \newline 
-	\myhttplink[``Как объявить константу в С++?
-	'']{https://cppconf-moscow.ru/2020/msk/talks/50qcqrqjnqti2i3tetrljs/}
+	\myhttplink[``Как объявить константу в С++?	'']{https://cppconf-moscow.ru/2020/msk/talks/50qcqrqjnqti2i3tetrljs/}
 }
 \cvitem{$\star$ 2019\cvmonth{11}}{
 	\myhttplink[\textbf{C++ Russia 2019 Piter}]{https://cppconf-piter.ru/} \newline 
@@ -182,7 +186,11 @@ Talks marked with $\star$ symbol deserve to be highlighted. Talks with captions 
 
 \section{Personal projects and contributions}\label{sec:contributions}
 
-\cvitem{from~2019\cvmonth{02} till~2019\cvmonth{5}}{
+\cvitem{from~2019\cvmonth{04}}{
+	\myhttplink[\textbf{conan}]{https://conan.io/index.html}, \emph{Contributor} \newline 
+	Author of \myhttplink[a number of pull requests]{https://github.com/conan-io/conan-center-index/pulls?q=is\%3Amerged+author\%3Ammatrosov+}.
+}
+\cvitem{from~2019\cvmonth{02} till~2019\cvmonth{05}}{
 	\myhttplink[\textbf{Основы разработки на С++: чёрный пояс}]{https://www.coursera.org/learn/c-plus-plus-black}, \newline \emph{Coauthor} \newline 
 	A coursera course created together with Yandex. Fifth out of five in the specialization \myhttplink[Искусство разработки на современном C++]{https://www.coursera.org/specializations/c-plus-plus-modern-development}. In my block I teach about undefined behavior and go through a big trainig problem of creating a spreadsheets engine (like Excel and backend for Google Spreadsheets).
 }
@@ -212,7 +220,7 @@ Talks marked with $\star$ symbol deserve to be highlighted. Talks with captions 
 }
 \cvitem{from~2010\cvmonth{01}}{
 	\myhttplink[\textbf{StackOverflow}]{http://stackoverflow.com/users/261217/mikhail}, \emph{Contributor} \newline 
-	Over 15k reputation, \myhttplink[over 90 accepted answers]{http://stackoverflow.com/search?q=user:261217+isaccepted:yes}. \newline
+	Over 19k reputation, \myhttplink[over 90 accepted answers]{http://stackoverflow.com/search?q=user:261217+isaccepted:yes}. \newline
 	Top 10\% for tags \texttt{c++}, \texttt{algorithm} and \texttt{image-processing}. \newline
 	Top 20\% for tags \texttt{matlab} and \texttt{opencv}.
 }
